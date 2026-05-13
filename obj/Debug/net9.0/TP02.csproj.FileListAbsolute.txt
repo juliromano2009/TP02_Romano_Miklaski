@@ -1,0 +1,9 @@
+Z:\2026\programacion\TP02\obj\Debug\net9.0\rpswa.dswa.cache.json
+Z:\2026\programacion\TP02\obj\Debug\net9.0\TP02.GeneratedMSBuildEditorConfig.editorconfig
+Z:\2026\programacion\TP02\obj\Debug\net9.0\TP02.AssemblyInfoInputs.cache
+Z:\2026\programacion\TP02\obj\Debug\net9.0\TP02.AssemblyInfo.cs
+Z:\2026\programacion\TP02\obj\Debug\net9.0\TP02.csproj.CoreCompileInputs.cache
+Z:\2026\programacion\TP02\obj\Debug\net9.0\TP02.MvcApplicationPartsAssemblyInfo.cache
+Z:\2026\programacion\TP02\obj\Debug\net9.0\TP02.RazorAssemblyInfo.cache
+Z:\2026\programacion\TP02\obj\Debug\net9.0\TP02.RazorAssemblyInfo.cs
+Z:\2026\programacion\TP02\obj\Debug\net9.0\TP02.sourcelink.json
