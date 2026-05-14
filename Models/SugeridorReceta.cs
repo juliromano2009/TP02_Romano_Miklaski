@@ -101,7 +101,7 @@ public class SugeridorRecetas
             {
                 if(cantComensales >= 1 && cantComensales <= 3)
                 {
-                    dificultad = "Principiante"
+                    dificultad = "Principiante";
                 }
                 else if(cantComensales >= 4 && cantComensales <= 7)
                 {
@@ -110,7 +110,7 @@ public class SugeridorRecetas
             }
             else if(presupuestoDisponible >= 3000)
             {
-                dificultad = "Intermedio"
+                dificultad = "Intermedio"; 
             }
         }
         else if(cantComensales >= 8)
