@@ -1,8 +1,30 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿<header>
+    <h1>TP02 Romano Miklaski</h1>
+</header>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<main>
+    <form action='@Url.Action("Datos", "Home")' method="GET">
+
+        <h2>Ingrese su nombre</h2>
+        <input type="text" name="nombreCocinero" />
+
+        <h2>Ingrese su fecha de nacimiento</h2>
+        <input type="date" name="fechaNacimiento" />
+
+        <h2>Ingrese el tipo de comida</h2>
+        <input type="radio" name="TipoComida" value="caliente" /> caliente
+        <input type="radio" name="TipoComida" value="fria" /> fria
+
+        <h2>Ingrese el presupuesto</h2>
+        <input type="number" name="presupuestoDisponible" />
+
+        <h2>Ingrese el numero de personas</h2>
+        <input type="number" min="1" max="20" name="cantComensales" /> <br /> <br /> 
+
+        <input type="submit" value="Enviar" />
+
+    </form>
+</main>
+
+<footer>
+</footer>
