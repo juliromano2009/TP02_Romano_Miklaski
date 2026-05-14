@@ -22,10 +22,10 @@ public class SugeridorRecetas
 
     public string determinarPlato()
     {
-        string devolucion = null;
+        string devolucion = "";
         if(TipoComida == "caliente")
         {
-            if(presupuestoDisponible  < 3000)
+            if(presupuestoDisponible < 3000)
             {
                 devolucion = "Fideos con manteca";
             }
@@ -40,7 +40,7 @@ public class SugeridorRecetas
         }
         else if(TipoComida == "fria")
         {
-            if(presupuestoDisponible  < 3000)
+            if(presupuestoDisponible < 3000)
             {
                 devolucion = "Ensalada simple";
             }
