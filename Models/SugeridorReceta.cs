@@ -55,4 +55,67 @@ public class SugeridorRecetas
         }
         return devolucion;
     }
+
+    public int determinarTiempo()
+    {
+        int tiempoEsperado;
+        if(TipoComida == "caliente")
+        {
+            if(cantComensales >= 1 && cantComensales <= 3)
+            {
+                tiempoEsperado = 20;
+            }
+            else if(cantComensales >= 4 && cantComensales <= 7)
+            {
+                tiempoEsperado = 40;
+            }
+            else if(cantComensales >= 8)
+            {
+                tiempoEsperado = 80;
+            }
+        }
+        else if(TipoComida == "fria")
+        {
+            if(cantComensales >= 1 && cantComensales <= 3)
+            {
+                tiempoEsperado = 10;
+            }
+            else if(cantComensales >= 4 && cantComensales <= 7)
+            {
+                tiempoEsperado = 20;
+            }
+            else if(cantComensales >= 8)
+            {
+                tiempoEsperado = 40;
+            }
+        }
+    }
+
+    public string determinarDificultar()
+    {
+        string dificultad;
+
+        if(cantComensales <= 7)
+        {
+            if(presupuestoDisponible < 3000)
+            {
+                if(cantComensales >= 1 && cantComensales <= 3)
+                {
+                    dificultad = "Principiante"
+                }
+                else if(cantComensales >= 4 && cantComensales <= 7)
+                {
+                    dificultad = "Intermedio";
+                }
+            }
+            else if(presupuestoDisponible >= 3000)
+            {
+                dificultad = "Intermedio"
+            }
+        }
+        else if(cantComensales >= 8)
+        {
+            dificultad = "Avanzado";
+        }
+    }
 }
