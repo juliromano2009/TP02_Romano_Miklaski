@@ -2,11 +2,11 @@ namespace TP02.Models;
 
 public class SugeridorRecetas
 {
-    public string nombreCocinero {get; set;}
-    public DateTime fechaNacimiento {private get; set;}
-    public string TipoComida {private get; set;}
-    public double presupuestoDisponible {private get; set;}
-    public int cantComensales {private get; set;}
+    public string NombreCocinero {get; set;}
+    public DateTime fechaNacimiento {get; set;}
+    public string TipoComida {get; set;}
+    public double presupuestoDisponible {get; set;}
+    public int cantComensales {get; set;}
 
     public int calcularEdad()
     {
@@ -58,7 +58,7 @@ public class SugeridorRecetas
 
     public int determinarTiempo()
     {
-        int tiempoEsperado;
+        int tiempoEsperado = 0;
         if(TipoComida == "caliente")
         {
             if(cantComensales >= 1 && cantComensales <= 3)
@@ -89,11 +89,12 @@ public class SugeridorRecetas
                 tiempoEsperado = 40;
             }
         }
+        return tiempoEsperado;
     }
 
     public string determinarDificultar()
     {
-        string dificultad;
+        string dificultad = null;
 
         if(cantComensales <= 7)
         {
