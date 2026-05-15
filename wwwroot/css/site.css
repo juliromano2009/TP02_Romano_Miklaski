@@ -7,6 +7,24 @@ html {
     font-size: 16px;
   }
 }
+h1{
+  font-size: 250%;
+}
+h2
+{
+  font-size: 150%;
+  margin-top: 2%;
+}
+
+p{
+  font-size : 100%; 
+}
+body{
+  background-color: antiquewhite;
+}
+footer{
+  background-color: white;
+}
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;

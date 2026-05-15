@@ -20,6 +20,44 @@ public class SugeridorRecetas
         return edad;
     }
 
+    public string generarSaludo()
+    {
+        int horario = DateTime.Now.Hour;
+        string saludo = "";
+        if(horario < 12)
+        {
+            saludo = "Buenos días!";
+        }
+        else if(horario >= 12 && horario <= 7)
+        {
+            saludo = "Buenas tardes!";
+        }
+        else if(horario > 7)
+        {
+            saludo = "Buenas noches!";
+        }
+        return saludo;
+    }
+
+    public string generarTip()
+    {
+        int edad = calcularEdad();
+        string tip = "";
+        if(edad < 18)
+        {
+            tip = "Ten cuidado con quienes compartís tus datos";
+        }
+        else if(edad >= 18 && edad < 60)
+        {
+            tip = "¡Sigue, tu puedes! 😁😁😁";
+        }
+        else if (edad >= 60)
+        {
+            tip = "Mensaje especial: Al que madriga Dios lo ayuda 😊";
+        } 
+        return tip;
+    }
+
     public string determinarPlato()
     {
         string devolucion = "";
